@@ -23,7 +23,7 @@ function SearchBar() {
       `http://openlibrary.org/search.json?q=${titleWithPlust}`
     );
     if (response.status === 200 && response.data.docs) {
-      response.data.docs.map((book) => {
+      response.data.docs.forEach((book) => {
         const title = book.title;
         const bookCover = book.cover_i ? `http://covers.openlibrary.org/b/id/${book.cover_i}-S.jpg` : "";
         const author = book.author_name;

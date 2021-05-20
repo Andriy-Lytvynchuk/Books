@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import SearchBar from "./compnents/searchBar";
+import SearchBar from "./components/searchBar";
 
 function App() {
   return (
